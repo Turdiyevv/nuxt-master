@@ -6,6 +6,6 @@
 <template>
   <div>
     <h4> auth page</h4>
-    <shred-button>button</shred-button>
+    <UButton>button</UButton>
   </div>
 </template>

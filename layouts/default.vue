@@ -2,11 +2,10 @@
 
 </script>
 <template>
-  <h1> default layout</h1>
-  <section>
     <layout-main-navbar/>
-    <slot/>
-  </section>
+    <section class="min-h-screen bg-white dark:bg-black">
+      <slot/>
+    </section>
 </template>
 <style scoped>
 
