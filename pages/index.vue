@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import {tabs} from "~/const";
+  import {tabs, templates} from "~/const";
 
   useHead({
     title: 'Jira soft'
@@ -64,6 +64,30 @@
                 flex items-center justify-center">
         <Icon name="material-symbols-light:linked-services" class="text-white text-4xl"/>
       </div>
+    </div>
+
+    <div class="grid grid-cols-2 mt-20">
+      <div class="bg-blue-500 dark:bg-blue-800 p-8">
+        <div class="flex flex-col space-y-2 item-center">
+          <h1 class="text-2xl font-medium">Templates give you a head start</h1>
+          <p class="text-xl">get started width ready-made templates</p>
+        </div>
+
+        <div v-for="(item, index) in templates" :key="index">
+          <div class="flex flex-col mt-4">
+            <div class="bg-gray-500 dark:bg-gray-800 flex item-center gap-5 h-20">
+              <div class="flex justify-center item-center bg-blue-500/30 dark:bg-blue-800/30 p-3 h-full">
+                <NuxtImg src="item.image" class="w-12"/>
+              </div>
+              <div class="flex flex space-y-2">
+                <h2 class="font-medium text-xl">{{item.name}}</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-500 dark:bg-gray-800 p-8"></div>
     </div>
   </section>
 </template>

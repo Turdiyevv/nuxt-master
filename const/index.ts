@@ -50,3 +50,21 @@ export const tabs = [
         }
     }
 ]
+export const templates = [
+    {
+        name: 'Scrum',
+        image: '/scrum.svg'
+    },
+    {
+        name: 'Kanban',
+        image: '/kanban.svg'
+    },
+    {
+        name: 'Bug Tracking',
+        image: '/bug.svg'
+    },
+    {
+        name: 'DevOps',
+        image: '/devops.svg'
+    }
+]
