@@ -20,7 +20,7 @@
         <UButton color="blue">Try it free</UButton>
       </NuxtLink>
     </div>
-    <NuxtImg src="/hero.webp"/>
+    <NuxtImg src="/hero.webp" class="w-8/12"/> <!--    test-->
   </section>
   <section>
     <h1 class="text-4xl font-medium px-4">All from a single source of truth</h1>
@@ -42,7 +42,7 @@
               </div>
             </div>
           </div>
-          <NuxtImg :src="item.image" class="w-[60]"/>
+          <NuxtImg :src="item.image" class="w-8/12"/> <!--test-->
         </div>
       </template>
     </UTabs>
@@ -77,7 +77,7 @@
           <div class="flex flex-col mt-4">
             <div class="bg-gray-500 dark:bg-gray-800 flex item-center gap-5 h-20">
               <div class="flex justify-center item-center bg-blue-500/30 dark:bg-blue-800/30 p-3 h-full">
-                <NuxtImg src="item.image" class="w-12"/>
+                <NuxtImg :src="item.image" class="w-12"/>
               </div>
               <div class="flex flex space-y-2">
                 <h2 class="font-medium text-xl">{{item.name}}</h2>
@@ -87,7 +87,13 @@
         </div>
       </div>
 
-      <div class="bg-gray-500 dark:bg-gray-800 p-8"></div>
+      <div class="bg-gray-500 dark:bg-gray-800 p-8">
+        <div class="flex flex-col space-y-2 items-center">
+          <h1 class="text-2xl font-medium">Then customize as your grow</h1>
+          <p>Jira soft Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet. Stay home!</p>
+          <NuxtImg src="/product.webp"/>
+        </div>
+      </div>
     </div>
   </section>
 </template>

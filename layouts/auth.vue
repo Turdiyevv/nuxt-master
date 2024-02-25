@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <h1> auth layout</h1>
+  <LayoutMainNavbar/>
   <section>
     <slot/>
   </section>
