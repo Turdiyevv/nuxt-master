@@ -21,7 +21,7 @@
           <template v-else>PLease use the following credentials to register</template>
         </p>
         <AuthLogin v-if="isLogin" :toggle-login="toggleLogin"/>
-        <AuthRegister v-else/>
+        <AuthRegister v-else :toggle-login="toggleLogin"/>
       </div>
 
       <UDivider label="OR" orientation="vertical" class="w-fit"/>
